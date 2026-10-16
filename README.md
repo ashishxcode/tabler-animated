@@ -1,11 +1,19 @@
-# Tabler Animated
+<p align="center">
+  <img src="apps/web/public/brand/app-icon.svg" alt="Tabler Animated logo" width="112" height="112" />
+</p>
+
+<h1 align="center">Tabler Animated</h1>
+
+<p align="center">
+  <a href="https://tabler-animated.vercel.app">tabler-animated.vercel.app</a>
+</p>
 
 Every Tabler icon, animated to match what it shows. Hover an icon to watch it move, then install it one at a time with the shadcn CLI. Each install adds a single component that depends only on [`motion`](https://motion.dev).
 
 ## Use an icon
 
 ```bash
-npx shadcn@latest add https://<your-site>/r/bell.json
+npx shadcn@latest add https://tabler-animated.vercel.app/r/bell.json
 ```
 
 ```tsx
