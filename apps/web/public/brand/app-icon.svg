@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="Tabler Animated">
+  <defs>
+    <linearGradient id="bg" x1="0.15" y1="0" x2="0.65" y2="1">
+      <stop offset="0" stop-color="#63c0ff"/><stop offset="0.45" stop-color="#2f78ff"/><stop offset="1" stop-color="#0536e6"/>
+    </linearGradient>
+    <clipPath id="tile"><rect width="1024" height="1024" rx="229"/></clipPath>
+  </defs>
+  <g clip-path="url(#tile)"><rect width="1024" height="1024" fill="url(#bg)"/></g>
+  <g transform="translate(212 250) scale(3.0)">
+    <polygon transform="translate(0 72)" points="100,24 164,58 100,92 36,58" fill="#8fbaff" stroke="#8fbaff" stroke-width="44" stroke-linejoin="round"/>
+    <polygon transform="translate(0 36)" points="100,24 164,58 100,92 36,58" fill="#c4dbff" stroke="#c4dbff" stroke-width="44" stroke-linejoin="round"/>
+    <polygon transform="translate(0 0)" points="100,24 164,58 100,92 36,58" fill="#fff" stroke="#fff" stroke-width="44" stroke-linejoin="round"/>
+  </g>
+</svg>
