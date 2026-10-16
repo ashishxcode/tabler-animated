@@ -1,6 +1,6 @@
 packages:
   - apps/*
 allowBuilds:
-  core-js: set this to true or false
+  core-js: false
   esbuild: true
   unrs-resolver: true
