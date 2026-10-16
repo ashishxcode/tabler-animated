@@ -1,0 +1,9 @@
+{
+  "ignore": {
+    "files": ["components/ui/**"],
+    "overrides": [
+      { "files": ["components/preview/use-icon-loop.ts"], "rules": ["react-doctor/effect-needs-cleanup"] },
+      { "files": ["lib/icon-data.ts"], "rules": ["react-doctor/js-set-map-lookups"] }
+    ]
+  }
+}
