@@ -1,0 +1,12 @@
+"use client";
+
+import { forwardRef } from "react";
+import { AnimatedIconBase, type AnimatedIconHandle, type AnimatedIconProps, type IconNode, type Rig } from "@/lib/animated-icon";
+
+const nodes: IconNode[] = [["path",{"d":"M6.706 6l-3.706 6l3.706 6h1.059l8.47 -12h1.06l3.705 6l-3.706 6"}]];
+const rig: Rig[] = [{"fx":"pop","n":[0],"o":[12,12],"a":0.1}];
+
+export const BrandPolymerIcon = forwardRef<AnimatedIconHandle, AnimatedIconProps>((props, ref) => (
+  <AnimatedIconBase ref={ref} nodes={nodes} rig={rig} {...props} />
+));
+BrandPolymerIcon.displayName = "BrandPolymerIcon";

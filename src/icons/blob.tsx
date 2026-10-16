@@ -1,0 +1,12 @@
+"use client";
+
+import { forwardRef } from "react";
+import { AnimatedIconBase, type AnimatedIconHandle, type AnimatedIconProps, type IconNode, type Rig } from "@/lib/animated-icon";
+
+const nodes: IconNode[] = [["path",{"d":"M5.897 20.188c1.67 .752 3.896 .812 6.103 .812s4.434 -.059 6.104 -.812c.868 -.392 1.614 -.982 2.133 -1.856c.514 -.865 .763 -1.94 .763 -3.234c0 -2.577 -.983 -5.315 -2.557 -7.416c-1.57 -2.094 -3.833 -3.682 -6.443 -3.682s-4.873 1.588 -6.443 3.682c-1.574 2.101 -2.557 4.84 -2.557 7.416c0 1.295 .249 2.369 .763 3.234c.519 .874 1.265 1.464 2.134 1.856"}]];
+const rig: Rig[] = [{"fx":"pop","n":[0],"o":[12,12.5],"a":0.12}];
+
+export const BlobIcon = forwardRef<AnimatedIconHandle, AnimatedIconProps>((props, ref) => (
+  <AnimatedIconBase ref={ref} nodes={nodes} rig={rig} {...props} />
+));
+BlobIcon.displayName = "BlobIcon";

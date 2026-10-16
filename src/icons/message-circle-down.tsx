@@ -1,0 +1,12 @@
+"use client";
+
+import { forwardRef } from "react";
+import { AnimatedIconBase, type AnimatedIconHandle, type AnimatedIconProps, type IconNode, type Rig } from "@/lib/animated-icon";
+
+const nodes: IconNode[] = [["path",{"d":"M12.006 19.98a9.869 9.869 0 0 1 -4.306 -.98l-4.7 1l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c1.993 1.7 2.93 4.041 2.746 6.344"}],["path",{"d":"M19 16v6"}],["path",{"d":"M22 19l-3 3l-3 -3"}]];
+const rig: Rig[] = [{"fx":"tilt","n":[0],"o":[12.01,11.99],"a":-4},{"fx":"pop","n":[1,2],"a":0.3,"dl":0.12,"st":0.08,"os":[[19,19],[19,20.5]]}];
+
+export const MessageCircleDownIcon = forwardRef<AnimatedIconHandle, AnimatedIconProps>((props, ref) => (
+  <AnimatedIconBase ref={ref} nodes={nodes} rig={rig} {...props} />
+));
+MessageCircleDownIcon.displayName = "MessageCircleDownIcon";

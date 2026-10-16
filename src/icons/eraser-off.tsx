@@ -1,0 +1,12 @@
+"use client";
+
+import { forwardRef } from "react";
+import { AnimatedIconBase, type AnimatedIconHandle, type AnimatedIconProps, type IconNode, type Rig } from "@/lib/animated-icon";
+
+const nodes: IconNode[] = [["path",{"d":"M3 3l18 18"}],["path",{"d":"M19 20h-10.5l-4.21 -4.3a1 1 0 0 1 0 -1.41l5 -4.993m2.009 -2.01l3 -3a1 1 0 0 1 1.41 0l5 5a1 1 0 0 1 0 1.41c-1.417 1.431 -2.406 2.432 -2.97 3m-2.02 2.043l-4.211 4.256"}],["path",{"d":"M18 13.3l-6.3 -6.3"}]];
+const rig: Rig[] = [{"fx":"draw","n":[0],"o":[12,12],"dl":0.25},{"fx":"write","n":[1,2],"o":[12.5,12]}];
+
+export const EraserOffIcon = forwardRef<AnimatedIconHandle, AnimatedIconProps>((props, ref) => (
+  <AnimatedIconBase ref={ref} nodes={nodes} rig={rig} {...props} />
+));
+EraserOffIcon.displayName = "EraserOffIcon";

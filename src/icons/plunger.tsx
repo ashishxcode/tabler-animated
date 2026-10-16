@@ -1,0 +1,12 @@
+"use client";
+
+import { forwardRef } from "react";
+import { AnimatedIconBase, type AnimatedIconHandle, type AnimatedIconProps, type IconNode, type Rig } from "@/lib/animated-icon";
+
+const nodes: IconNode[] = [["path",{"d":"M12.71 14.12l7.81 -7.82a2 2 0 0 0 -2.82 -2.82l-7.82 7.81"}],["path",{"d":"M3.71 13.22l.7 -.71a5 5 0 0 1 7.08 0a5 5 0 0 1 0 7.08l-.71 .7"}],["path",{"d":"M3 12.5l8.5 8.5"}]];
+const rig: Rig[] = [{"fx":"pop","n":[0,1,2],"o":[12,12],"a":0.06}];
+
+export const PlungerIcon = forwardRef<AnimatedIconHandle, AnimatedIconProps>((props, ref) => (
+  <AnimatedIconBase ref={ref} nodes={nodes} rig={rig} {...props} />
+));
+PlungerIcon.displayName = "PlungerIcon";
