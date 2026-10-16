@@ -1,0 +1,20 @@
+name: Bug report
+description: Something is broken or looks wrong
+labels: [bug]
+body:
+  - type: input
+    id: icon
+    attributes:
+      label: Icon name
+      description: For example `bell`. Leave empty if it is not about one icon.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you saw, what you expected, and the steps to reproduce it.
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Browser and version
