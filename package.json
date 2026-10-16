@@ -1,0 +1,42 @@
+{
+  "name": "tabler-animated",
+  "version": "0.1.0",
+  "description": "Every Tabler icon, animated to match what it shows. Installable one at a time with the shadcn CLI.",
+  "license": "MIT",
+  "author": "Ashish Patel",
+  "private": true,
+  "type": "module",
+  "keywords": [
+    "icons",
+    "tabler",
+    "animated",
+    "motion",
+    "react",
+    "shadcn"
+  ],
+  "scripts": {
+    "generate": "tsx scripts/generate.ts",
+    "registry": "tsx scripts/build-registry.ts",
+    "typecheck": "tsc --noEmit",
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "lint": "pnpm --filter web lint",
+    "format": "pnpm --filter web format",
+    "format:check": "pnpm --filter web format:check"
+  },
+  "dependencies": {
+    "motion": "^14.2.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@tabler/icons": "^3.49.0",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "svg-path-bbox": "^2.1.0",
+    "svgson": "^5.3.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

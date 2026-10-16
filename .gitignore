@@ -1,0 +1,13 @@
+node_modules
+.next
+*.tsbuildinfo
+.DS_Store
+.env*
+!.env.example
+
+# internal notes about how this was built, kept local
+docs/SEO-CHECKLIST.md
+DESIGN.md
+PRODUCT.md
+.impeccable/
+apps/web/.impeccable/
